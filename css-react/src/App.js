@@ -11,6 +11,9 @@ function App() {
       {/* CSS de componente */}
       <MyComponant />
       <p>Parágrafo do App.js</p>
+      {/* Inline CSS */}
+      {/* A primeira chave é para inserir algo dinâmico, a segunda, um objeto */}
+      <p style={{color: "blue", padding: "25px", borderTop: "6px solid red"}}>Esse elemento foi estilizado na própia tag. Sendo não recomendado</p>
     </div>
   );
 }
