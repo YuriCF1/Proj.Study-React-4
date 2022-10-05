@@ -6,7 +6,8 @@ import { useState } from 'react';
 
 function App() {
   const n = 15;
-  const [name] = useState("Yuri")
+  const [name] = useState("Yuri");
+  const redTitle = false;
 
   return (
     <div className="App">
@@ -22,7 +23,8 @@ function App() {
       <h1 style={n < 10 ? ({color: "purple"}) : ({color: "green"})}>CSS dinâmico</h1>
       <h1 style={n > 10 ? ({color: "purple"}) : ({color: "green"})}>CSS dinâmico</h1>
       {name === "Yuri" && <h1 style={name === "Yuri" ? ({color: "green", backgroundColor: "yellow"}) : null}>Teste de nome: De fato, o nome é "{name}"</h1>}
-      
+      {/*  Class dinâmica */}
+      <h2 className={redTitle ? "red-title" : "title"}>Este título terá classe dinâmica</h2>
     </div>
   );
 }
