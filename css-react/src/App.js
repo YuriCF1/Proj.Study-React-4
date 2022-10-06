@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import MyComponant from './components/MyComponant';
 import { useState } from 'react';
+import Title from './components/Title';
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
       {name === "Yuri" && <h1 style={name === "Yuri" ? ({color: "green", backgroundColor: "yellow"}) : null}>Teste de nome: De fato, o nome é "{name}"</h1>}
       {/*  Class dinâmica */}
       <h2 className={redTitle ? "red-title" : "title"}>Este título terá classe dinâmica</h2>
+      {/* CSS Modules */}
+      {/* Restrinjo o CSS ao nível do componente, apenas */}
+      <Title />
     </div>
   );
 }
