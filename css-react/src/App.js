@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import MyComponant from './components/MyComponant';
 import { useState } from 'react';
 import Title from './components/Title';
+import Cars from './components/Cars';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
       {/* CSS Modules */}
       {/* Restrinjo o CSS ao nível do componente, apenas */}
       <Title />
+      {/* Exercício */}
+      <Cars />
     </div>
   );
 }
